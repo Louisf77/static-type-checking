@@ -15,4 +15,4 @@ function findShortestString(stringArr: string[]): string {
   return shortestString;
 }
 
-export default findShortestString 
+export default findShortestString;
