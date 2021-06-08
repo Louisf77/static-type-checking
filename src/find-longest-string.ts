@@ -1,19 +1,18 @@
 /**
- * Find the longest string in an array.
+ * Find the shortest string in an array.
  * In the case of a tie, returns the earlier string in the array.
  *
- * @param stringArr - array of strings
- * @returns the longest string
+ * @param stringArr array of strings
+ * @returns the shortest string
  */
-function findLongestString(stringArr: string[]): string {
-  let longestString = stringArr[0];
+ function findShortestString(stringArr: string[]): string {
+  let shortestString = stringArr[0];
   for (const str of stringArr) {
-    if (str.length > longestString.length) {
-      longestString = str;
+    if (str.length < shortestString.length) {
+      shortestString = str;
     }
   }
-  return longestString;
+  return shortestString.length;
 }
 
-// export function so it can be used in test file
-export default findLongestString;
+export default findShortestString;
